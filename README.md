@@ -1,66 +1,43 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+OpenHouse Management Platform
+Overview
+This project aims to meet the requirements of NUST-SEECS' annual open house event, where Final Year students showcase their projects to industry and academia guests. The goal is to create a comprehensive management platform that efficiently assigns projects to evaluators based on their preferences and specialty areas.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Features
+User Accounts
+    Guests (Evaluators)
+    •	Each evaluator has a dedicated account where they can set preferences, including preferred project categories and specialty areas.
+    FYP Groups
+    •	Final Year Project groups are provided with accounts to manage their project details, including assigning keywords.
+    Admin Account
+    •	The admin account has the authority to set the physical location of each FYP project on the demonstration floor.
+Project Assignment
+•	Projects are randomly assigned to guests based on matching keywords and evaluator preferences.
+•	Each evaluator is assigned to evaluate between 3-5 projects.
+Evaluation Process
+•	Evaluators are shown the location of their assigned projects.
+•	They can rate each project on a scale of 1-10, and the evaluation results are visible only to the admin.
+Student Access
+•	Students can view the number of evaluators who have assessed their project but do not have access to individual evaluator scores.
 
-## About Laravel
+Technical Considerations
+Server-Side Development
+•	The platform is developed using Laravel on the server side.
+Client-Side Development
+•	Any language or framework can be used on the client side.
+User Authentication
+•	User authentication is implemented for guests, FYP groups, and admins.
+Database
+•	A secure database is used to store project details, evaluator preferences, and evaluation scores.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Implementation
+The project is successfully implemented, providing a seamless experience for both evaluators and students during the open house event. The combination of Laravel for the server side and flexibility in choosing the client-side language or framework allows for efficient development and customization.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Setting up the platform:
+Place the assignment folder in the XAMPP/htdocs/ directory to host the web application on the localhost.
+Run the following command in the terminal where you have placed the assignment folder,
+    "php artisan migrate:refresh --seed"
+Search the following url in the browser to open the web application,
+    "http://localhost/<folder_name>/login"
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Conclusion
+The OpenHouse Management Platform plays a crucial role in enhancing the organization and evaluation process of the annual open house event at NUST-SEECS. Its user-friendly interface and robust features contribute to a successful showcase of Final Year Projects.
