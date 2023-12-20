@@ -40,12 +40,13 @@ This project aims to meet the requirements of NUST-SEECS' annual open house even
 The project is successfully implemented, providing a seamless experience for both evaluators and students during the open house event. The combination of Laravel for the server side and flexibility in choosing the client-side language or framework allows for efficient development and customization.
 
 ## Setting up the platform
-1. Place the assignment folder in the XAMPP/htdocs/ directory to host the web application on the localhost.
-2. Run `php artisan serve` to start the server.
-3. Run the following command in the terminal where you have placed the assignment folder:
+1. Clone the repository using Git Bash or download the zipped folder.
+2. Place the cloned repository in the XAMPP/htdocs/ directory to host the web application on the localhost.
+3. Run `php artisan serve` to start the server.
+4. Run the following command in the terminal where you have placed the assignment folder:
    ```bash
    php artisan migrate:refresh --seed
-4. Search the following URL in the browser to open the web application:
+5. Search the following URL in the browser to open the web application:
    ```bash
    http://localhost/<folder_name>/login
    
